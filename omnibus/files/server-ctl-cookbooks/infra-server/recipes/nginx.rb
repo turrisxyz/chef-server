@@ -247,7 +247,7 @@ end
 # So added retries for making sure the nginx runit service is running
 component_runit_service 'nginx' do
   action [:enable, :start]
-  retries 10
+  retries 20
   retry_delay 1
 end
 

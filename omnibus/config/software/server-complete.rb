@@ -18,6 +18,7 @@ license :project_license
 #                      conditionally add the dependency for popt on s390x.
 
 dependency "libiconv"
+#dependency "opensearch"
 
 dependency "private-chef-scripts" # assorted scripts used by installed instance
 
@@ -33,7 +34,8 @@ dependency "postgresql96-bin" # for upgrading 9.6 -> 13
 dependency "postgresql13"
 dependency "redis" # dynamic routing controls
 dependency "haproxy"
-dependency "elasticsearch" # used by search
+#dependency "elasticsearch" # used by search
+dependency "opensearch" # used by search
 
 # moved earlier because it is external to this repo and pinned, so should change infrequently
 dependency "chef" # for embedded chef-client -z runs (built from main - build last)

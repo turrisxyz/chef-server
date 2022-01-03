@@ -48,6 +48,7 @@ The Chef Infra Server 14 upgrade does not automatically reindex existing externa
 
 #### Upgrading to 14.13
 
+<<<<<<< HEAD
 Chef Infra Server 14.13 supports external OpenSearch for indexing. To migrate from Elasticsearch to external OpenSearch, you must reindex and reconfigure your database after upgrading to Chef Infra Server 14.13. The duration of this operation will vary depending on your server hardware and the number of node objects on your Chef Infra Server.
 
 #### Steps To Enable External OpenSearch
@@ -61,6 +62,15 @@ For example:
 opensearch['external'] = true
 opensearch['external_url'] = "http://127.0.0.1:9200"
 ```
+=======
+Chef Infra Server 14.13 supports External Opensearch for indexing. Migrating from Elasticsearch to External Opensearch needs ontime reindexing and reconfigure after upgrade. This process may take longer depending on your server hardware and the size of the node objects on your Chef Infra Server.
+
+{{< note >}}
+
+Set the `opensearch['external']` & `opensearch['external_url']` attribute in [chef-server.rb]({{< relref "config_rb_server_optional_settings" >}}) to enable external Opensearch for indexing.
+
+{{</note >}}
+>>>>>>> Internal OS - Erchef code changes
 
 #### Upgrading to 14.8
 

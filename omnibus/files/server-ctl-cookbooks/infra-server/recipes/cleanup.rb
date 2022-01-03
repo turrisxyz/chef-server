@@ -33,3 +33,8 @@ directory '/opt/opscode/sv/rabbitmq' do
   recursive true
   action :delete
 end
+
+directory '/opt/opscode/sv/elasticsearch' do
+  recursive true
+  action :delete
+end
