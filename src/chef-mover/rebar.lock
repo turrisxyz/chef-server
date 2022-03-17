@@ -26,7 +26,7 @@
   0},
  {<<"chef_secrets">>,
   {git,"https://github.com/chef/chef_secrets",
-       {branch,"master"}},
+       {ref,"58373899212a23e4f37070aaa6d3a751b1281492"}},
   0},
  {<<"couchbeam">>,
   {git,"https://github.com/chef/couchbeam",
